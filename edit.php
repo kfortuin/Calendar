@@ -19,7 +19,7 @@
 	
 	<body>    
 		<form action="logic/edit.logic.php?id=<?=$id?>" method="post">
-		<input type="text" name="name" value="" id="name" placeholder="<?=$name?>">
+		<input type="text" name="name" value="<?=$name?>" id="name" placeholder="<?=$name?>">
 
 		<select name="day" id="day">
 			<?php 
@@ -40,7 +40,7 @@
 				{
 					if ($newmonth == $month)
 					{
-						echo "<option value='newmonth' selected='selected'>$newmonth</option>";
+						echo "<option value='$newmonth' selected='selected'>$newmonth</option>";
 					}else{
 						echo "<option value='$newmonth'>$newmonth</option>";
 					}
@@ -54,7 +54,7 @@
 				{
 					if ($newyear == $year)
 					{
-						echo "<option value='newyear' selected='selected'>$newyear</option>";
+						echo "<option value='$newyear' selected='selected'>$newyear</option>";
 					}else{
 						echo "<option value='$newyear'>$newyear</option>";
 					}

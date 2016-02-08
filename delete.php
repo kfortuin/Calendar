@@ -38,7 +38,7 @@
 	<br>
 	<?php foreach ($person as $persons) : ?>
 			<?=$persons['person'] 
-			. ", borm " 
+			. ", born " 
 			. $persons['day'] 
 			. " " 
 			. $persons['month'] 
