@@ -18,9 +18,9 @@ $months = $result->fetch_all(MYSQLI_ASSOC)
 	
 	<body>    
 	<form action="logic/create.logic.php" method="post">
-		<input type="text" name="name" id="name" placeholder="Who's the lucky one?">
+		<input required type="text" autocomplete="off" name="name" id="name" placeholder="Who's the lucky one?">
 
-		<select name="day" id="day">
+		<select required name="day" id="day">
 		<?php for ($day = 1; $day <=31; $day++)
 		{
 			echo "<option value='$day'>$day</option>";
@@ -28,7 +28,7 @@ $months = $result->fetch_all(MYSQLI_ASSOC)
 		?>
 		</select>
 
-		<select name="month">
+		<select required name="month">
 			<?php
 				foreach ($months as $month): 
 			?>
@@ -38,7 +38,7 @@ $months = $result->fetch_all(MYSQLI_ASSOC)
 			?>
 		</select>
 
-		<select name="year" id="year">
+		<select required name="year" id="year">
 		<?php for ($year = 1900; $year <=2016; $year++)
 		{
 			echo "<option value='$year'>$year</option>";

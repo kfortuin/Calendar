@@ -39,10 +39,11 @@
 	<?php foreach ($person as $persons) : ?>
 			<?=$persons['person'] 
 			. ", born " 
-			. $persons['day'] 
-			. " " 
-			. $persons['month'] 
 			. " "
+			. $persons['month']
+			. " "
+			. $persons['day']
+			. ", "
 			. $persons['year']
 			?>
 		<?php endforeach; ?>

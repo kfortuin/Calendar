@@ -19,9 +19,9 @@
 	
 	<body>    
 		<form action="logic/edit.logic.php?id=<?=$id?>" method="post">
-		<input type="text" name="name" value="<?=$name?>" id="name" placeholder="<?=$name?>">
+		<input required autocomplete="off" type="text" name="name" value="<?=$name?>" id="name" placeholder="<?=$name?>">
 
-		<select name="day" id="day">
+		<select required name="day" id="day">
 			<?php 
 				for ($newday = 1; $newday <=31; $newday++)
 				{
@@ -34,7 +34,7 @@
 			?>
 		</select>
 
-		<select name="month">
+		<select required name="month">
 			<?php
 				for ($newmonth = 1; $newmonth <=12; $newmonth++) 
 				{
@@ -48,7 +48,7 @@
 			?>
 		</select>
 
-		<select name="year" id="year">
+		<select required name="year" id="year">
 			<?php 
 				for ($newyear = 1900; $newyear <=2016; $newyear++)
 				{
